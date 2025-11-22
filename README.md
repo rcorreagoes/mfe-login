@@ -8,12 +8,14 @@ This repository contains a micro-frontend (MFE) Angular application for authenti
 - `projects/shell/`: (If present) Shell/container for hosting MFEs
 
 ## Features
+
 - Login screen with Angular Material UI
 - Forgot password flow with email and code validation
 - Change password screen with double password entry
 - Responsive and modern design
 
 ## Prerequisites
+
 - Node.js (v18 or higher recommended)
 - npm (v9 or higher recommended)
 - Angular CLI (v16+)
@@ -53,6 +55,7 @@ The shell app will be available at `http://localhost:4200/` (or the port configu
 - `ng test` — Run unit tests
 
 ## Notes
+
 - Ensure all dependencies are installed in the root folder.
 - For module federation to work, both the shell and remote (login) must be running.
 - For more details, check each project's `angular.json` configuration.
@@ -60,6 +63,7 @@ The shell app will be available at `http://localhost:4200/` (or the port configu
 ---
 
 Feel free to contribute or open issues for improvements!
+
 # MfeLogin
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.0.
