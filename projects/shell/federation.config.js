@@ -4,12 +4,8 @@ module.exports = withNativeFederation({
 
   name: 'shell',
 
-  exposes: {
-    './Component': './projects/shell/src/app/app.ts',
-  },
-
-  shared: {
-    ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+  remotes: {
+    'login': 'http://localhost:4205/remoteEntry.json',
   },
 
   skip: [
@@ -17,17 +13,10 @@ module.exports = withNativeFederation({
     'rxjs/fetch',
     'rxjs/testing',
     'rxjs/webSocket',
-    // Add further packages you don't need at runtime
   ],
 
-  // Please read our FAQ about sharing libs:
-  // https://shorturl.at/jmzH0
-
   features: {
-    // New feature for more performance and avoiding
-    // issues with node libs. Comment this out to
-    // get the traditional behavior:
     ignoreUnusedDeps: true
   }
-  
+
 });
