@@ -1,0 +1,7 @@
+.main-container {
+  margin: 32px auto;
+  margin: 16px;
+  height: calc(100vh - 34px);
+  padding: 24px 16px 8px 16px;
+  position: relative;
+}

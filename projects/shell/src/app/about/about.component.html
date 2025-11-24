@@ -1,0 +1,42 @@
+<mat-card class="main-container">
+  <mat-card-content>
+    <div class="about-container">
+      <h2>Sobre: Micro Frontend Angular</h2>
+      <p>
+        <strong>Micro Frontends</strong> é um estilo arquitetural onde uma aplicação frontend é
+        dividida em "microaplicações" individuais e semi-independentes, que trabalham juntas de
+        forma integrada. No ecossistema Angular, isso geralmente é feito usando
+        <strong>Module Federation</strong>, permitindo que múltiplas aplicações Angular sejam
+        desenvolvidas, implantadas e atualizadas de forma independente, mas carregadas juntas em
+        tempo de execução para uma experiência unificada.
+      </p>
+      <p>
+        Este projeto demonstra uma arquitetura de micro frontends com Angular. Ele é composto por um
+        <strong>micro frontend de login</strong> (remoto) e uma
+        <strong>aplicação shell</strong> (host). O MFE de login fornece telas de autenticação como
+        login, esqueci minha senha e alteração de senha, todas estilizadas com Angular Material. A
+        aplicação shell carrega e exibe o MFE de login dinamicamente, permitindo desenvolvimento e
+        deploy independentes.
+      </p>
+      <ul>
+        <li>Cada micro frontend pode ser desenvolvido e implantado separadamente.</li>
+        <li>
+          Module Federation permite compartilhar código e funcionalidades entre apps em tempo de
+          execução.
+        </li>
+        <li>Essa abordagem melhora a escalabilidade, manutenção e autonomia dos times.</li>
+      </ul>
+      <p>
+        <strong>Funcionalidades implementadas neste projeto:</strong>
+      </p>
+      <ul>
+        <li>Tela de login com Angular Material</li>
+        <li>Fluxo de recuperação de senha com validação de email e código</li>
+        <li>Tela de alteração de senha com confirmação</li>
+        <li>Design moderno e responsivo</li>
+        <li>Integração micro frontend usando Module Federation</li>
+      </ul>
+      <button mat-raised-button color="primary" routerLink="/login">Ir para o Login</button>
+    </div>
+  </mat-card-content>
+</mat-card>
