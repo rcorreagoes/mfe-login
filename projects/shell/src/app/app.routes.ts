@@ -30,4 +30,8 @@ export const routes: Routes = [
         exposedModule: './Login',
       }).then((m) => m.Login),
   },
+  {
+    path: 'dashboard',
+    loadComponent: () => import('./dashboard/dashboard').then((m) => m.Dashboard),
+  },
 ];

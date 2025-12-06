@@ -1,0 +1,17 @@
+{
+  "/remote-dashboard": {
+    "target": "https://mfe-dashboard.leafdev.pt",
+    "secure": true,
+    "pathRewrite": {
+      "^/remote-dashboard": ""
+    },
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/_angular": {
+    "target": "https://mfe-dashboard.leafdev.pt",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

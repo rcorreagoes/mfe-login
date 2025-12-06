@@ -98,7 +98,8 @@
 					},
 					"defaultConfiguration": "development",
 					"options": {
-						"port": 4300
+						"port": 4300,
+						"proxyConfig": "projects/shell/proxy.conf.json"
 					}
 				}
 			}
