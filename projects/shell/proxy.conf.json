@@ -7,11 +7,5 @@
     },
     "changeOrigin": true,
     "logLevel": "debug"
-  },
-  "/_angular": {
-    "target": "https://mfe-dashboard.leafdev.pt",
-    "secure": true,
-    "changeOrigin": true,
-    "logLevel": "debug"
   }
 }
