@@ -1,4 +1,27 @@
-export const ABOUT_MOCK: any = {
+export interface About {
+  date: string;
+  type: AboutType[];
+}
+
+interface AboutType {
+  typeName: string;
+  contentType: descriptionType[];
+}
+
+interface descriptionType {
+  title: string;
+  description: string;
+}
+
+export interface Menu {
+  icon?: string;
+  item: string;
+  url?: string;
+  route?: string;
+  children?: Menu[];
+}
+
+export const ABOUT_MOCK: About = {
   date: '07-03-2025',
   type: [
     {
@@ -30,7 +53,7 @@ export const ABOUT_MOCK: any = {
   ],
 };
 
-export const MENU_MOCK: any[] = [
+export const MENU_MOCK: Menu[] = [
   {
     icon: 'person',
     item: 'Clientes',
@@ -72,13 +95,5 @@ export const MENU_MOCK: any[] = [
       { icon: '', item: 'Line chart', route: 'chart' },
       { icon: '', item: 'Table', route: 'table' },
     ],
-  },
-];
-
-export const SETTINGS_MOCK: any[] = [
-  {
-    icon: '',
-    label: 'about',
-    click: '',
   },
 ];

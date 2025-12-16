@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ABOUT_MOCK, MENU_MOCK } from './dashboard-mock';
+import { About, ABOUT_MOCK, Menu, MENU_MOCK } from './dashboard-mock';
 import { DashboardWrapperComponent } from './dashboard-wrapper';
 
 @Component({
@@ -9,8 +9,8 @@ import { DashboardWrapperComponent } from './dashboard-wrapper';
   styleUrl: './dashboard.scss',
 })
 export class Dashboard {
-  aboutItens: any = ABOUT_MOCK;
+  aboutItens: About = ABOUT_MOCK;
   appName = 'Leaf Development';
-  menuItens: any[] = MENU_MOCK;
+  menuItens: Menu[] = MENU_MOCK;
   constructor() {}
 }

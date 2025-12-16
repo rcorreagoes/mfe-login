@@ -1,5 +1,6 @@
 import { loadRemoteModule } from '@angular-architects/native-federation';
 import { AfterViewInit, Component, Input, ViewChild, ViewContainerRef } from '@angular/core';
+import { About, Menu } from './dashboard-mock';
 
 @Component({
   selector: 'app-dashboard-wrapper',
@@ -38,9 +39,9 @@ export class DashboardWrapperComponent implements AfterViewInit {
   loading = true;
   @Input() logoUrl: string = 'logo.png';
   @Input() userId!: string;
-  @Input() aboutItens: any[] = [];
+  @Input() aboutItens: About[] = [];
   @Input() appName: string = '';
-  @Input() menuItens: any[] = [];
+  @Input() menuItens: Menu[] = [];
   @ViewChild('dashboard', { read: ViewContainerRef, static: true }) dashboard!: ViewContainerRef;
 
   async ngAfterViewInit() {
