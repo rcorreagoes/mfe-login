@@ -32,6 +32,10 @@ export const routes: Routes = [
   },
   {
     path: 'dashboard',
-    loadComponent: () => import('./dashboard/dashboard').then((m) => m.Dashboard),
+    loadComponent: () =>
+      loadRemoteModule({
+        remoteEntry: '/remote-dashboard/remoteEntry.json',
+        exposedModule: './Dashboard',
+      }).then((m) => m.Dashboard),
   },
 ];

@@ -1,10 +1,9 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,10 +13,9 @@ import { Router } from '@angular/router';
   styleUrl: './login.scss',
 })
 export class Login {
-  private readonly router = inject(Router);
   hide = true;
 
   onLogin() {
-    this.router.navigate(['/dashboard']);
+    window.dispatchEvent(new CustomEvent('mfeLoginOk'));
   }
 }

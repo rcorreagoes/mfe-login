@@ -6,6 +6,7 @@ module.exports = withNativeFederation({
 
   remotes: {
     login: 'http://localhost:4205/remoteEntry.json',
+    dashboard: 'https://mfe-dashboard.leafdev.pt',
   },
 
   shared: {
