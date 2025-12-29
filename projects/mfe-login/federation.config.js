@@ -2,12 +2,12 @@ const { withNativeFederation, shareAll } = require('@angular-architects/native-f
 
 module.exports = withNativeFederation({
 
-  name: 'login',
+  name: 'mfe-login',
 
   exposes: {
-    './ChangePassword': './projects/login/src/app/views/change-password/change-password.ts',
-    './ForgotPassword': './projects/login/src/app/views/forgot-password/forgot-password.ts',
-    './Login': './projects/login/src/app/views/login/login.ts',
+    './ChangePassword': './projects/mfe-login/src/app/views/change-password/change-password.ts',
+    './ForgotPassword': './projects/mfe-login/src/app/views/forgot-password/forgot-password.ts',
+    './Login': './projects/mfe-login/src/app/views/login/login.ts',
   },
 
   shared: {

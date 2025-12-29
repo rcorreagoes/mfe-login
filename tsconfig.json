@@ -30,10 +30,10 @@
       "path": "./projects/shell/tsconfig.spec.json"
     },
     {
-      "path": "./projects/login/tsconfig.app.json"
+      "path": "./projects/mfe-login/tsconfig.app.json"
     },
     {
-      "path": "./projects/login/tsconfig.spec.json"
+      "path": "./projects/mfe-login/tsconfig.spec.json"
     }
   ]
 }

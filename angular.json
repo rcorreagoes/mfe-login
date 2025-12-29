@@ -104,15 +104,15 @@
 				}
 			}
 		},
-		"login": {
+		"mfe-login": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
 					"style": "scss"
 				}
 			},
-			"root": "projects/login",
-			"sourceRoot": "projects/login/src",
+			"root": "projects/mfe-login",
+			"sourceRoot": "projects/mfe-login/src",
 			"prefix": "app",
 			"architect": {
 				"build": {
@@ -120,10 +120,10 @@
 					"options": {},
 					"configurations": {
 						"production": {
-							"target": "login:esbuild:production"
+							"target": "mfe-login:esbuild:production"
 						},
 						"development": {
-							"target": "login:esbuild:development",
+							"target": "mfe-login:esbuild:development",
 							"dev": true
 						}
 					},
@@ -132,7 +132,7 @@
 				"serve": {
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
-						"target": "login:serve-original:development",
+						"target": "mfe-login:serve-original:development",
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
@@ -144,17 +144,17 @@
 				"esbuild": {
 					"builder": "@angular/build:application",
 					"options": {
-						"browser": "projects/login/src/main.ts",
-						"tsConfig": "projects/login/tsconfig.app.json",
+						"browser": "projects/mfe-login/src/main.ts",
+						"tsConfig": "projects/mfe-login/tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
 							{
 								"glob": "**/*",
-								"input": "projects/login/public"
+								"input": "projects/mfe-login/public"
 							}
 						],
 						"styles": [
-							"projects/login/src/styles.scss"
+							"projects/mfe-login/src/styles.scss"
 						],
 						"polyfills": [
 							"es-module-shims"
@@ -188,10 +188,10 @@
 					"builder": "@angular/build:dev-server",
 					"configurations": {
 						"production": {
-							"buildTarget": "login:esbuild:production"
+							"buildTarget": "mfe-login:esbuild:production"
 						},
 						"development": {
-							"buildTarget": "login:esbuild:development"
+							"buildTarget": "mfe-login:esbuild:development"
 						}
 					},
 					"defaultConfiguration": "development",
